@@ -1,0 +1,35 @@
+:root{
+    --accordion-border-color: #fff;
+    --accordion-bg-color: #fff
+}
+
+.accordion-container {
+    background-color: var(--accordion-bg-color);
+    border: 2px solid var(--accordion-border-color) ;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    width: 518px;
+    overflow: hidden;
+    height: 112px;
+    transition: height 0.5s ease-in-out;
+}
+
+.accordion-container.not-active {
+    height: 59px;
+}
+
+.header-part {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    color: var(--accordion-border-color);
+    justify-self: flex-end;
+}
+
+/* .moving-part {
+    display: none;
+} */
